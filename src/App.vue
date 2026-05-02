@@ -150,7 +150,7 @@ const showBar = ref(false)
       @reset-camera="resetCamera"
       v-if="showBar"
     >
-    <template> <button @click="showBar = !showBar">{{ showBar ? 'Hide' : 'Show' }} bar</button></template>
+    <button @click="showBar = !showBar">{{ showBar ? 'Hide' : 'Show' }} bar</button>
     </LightingPanel>
   </main>
 </template>

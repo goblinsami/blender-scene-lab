@@ -40,6 +40,7 @@ const onImport = (event: Event) => {
 <template>
   <aside class="panel">
     <h2>Lighting Lab</h2>
+    <slot></slot>
 
     <section class="group">
       <label for="modelSelect" class="group-title">Model</label>

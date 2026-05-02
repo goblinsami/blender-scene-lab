@@ -149,7 +149,9 @@ const showBar = ref(false)
       @import-glb="importGlbFiles"
       @reset-camera="resetCamera"
       v-if="showBar"
-    />
+    >
+    <template> <button @click="showBar = !showBar">{{ showBar ? 'Hide' : 'Show' }} bar</button></template>
+    </LightingPanel>
   </main>
 </template>
 

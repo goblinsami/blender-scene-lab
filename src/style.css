@@ -1,0 +1,77 @@
+﻿:root {
+  color-scheme: dark;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0a0d13;
+  color: #f4f7ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 20% 15%, #131b2c 0%, #090c12 55%);
+}
+
+.app-shell {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 320px;
+}
+
+.viewport-area {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.toolbar {
+  position: absolute;
+  top: 0.8rem;
+  left: 0.8rem;
+  z-index: 2;
+  background: rgba(13, 18, 30, 0.72);
+  border: 1px solid rgba(108, 127, 179, 0.28);
+  border-radius: 0.7rem;
+  padding: 0.65rem 0.8rem;
+  backdrop-filter: blur(6px);
+}
+
+.toolbar h1 {
+  margin: 0;
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+}
+
+.toolbar p {
+  margin: 0.3rem 0 0;
+  color: #aeb8d0;
+  font-size: 0.82rem;
+}
+
+.error-banner {
+  position: absolute;
+  left: 0.8rem;
+  bottom: 0.8rem;
+  max-width: 480px;
+  z-index: 3;
+  background: rgba(83, 21, 30, 0.9);
+  border: 1px solid rgba(255, 118, 118, 0.4);
+  color: #ffd6d6;
+  padding: 0.65rem 0.8rem;
+  border-radius: 0.6rem;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 960px) {
+  .app-shell {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+  }
+}
+
